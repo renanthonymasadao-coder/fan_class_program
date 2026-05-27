@@ -65,3 +65,11 @@ class Fan:
             3: "FAST"
         }
 
+        print(text_color + "=" * 45)
+        print("              FAN DETAILS")
+        print("=" * 45)
+        print(f"Speed   : {speed_text[self.__speed]}")
+        print(f"Radius  : {self.__radius}")
+        print(f"Color   : {self.__color}")
+        print(f"Status  : {status}")
+        print("=" * 45 + RESET)
