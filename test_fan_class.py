@@ -19,3 +19,14 @@ fan2.set_speed(Fan.MEDIUM)
 fan2.set_radius(5)
 fan2.set_color("blue")
 fan2.set_on(False)
+
+# DISPLAY OUTPUTS
+print("\nFIRST FAN OBJECT")
+fan1.display_info()
+
+print("\nSECOND FAN OBJECT")
+fan2.display_info()
+
+print("\n==========================================")
+print("        END OF PROGRAM")
+print("==========================================")
