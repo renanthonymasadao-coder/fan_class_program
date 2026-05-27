@@ -1,6 +1,6 @@
 # test_fan.py, importing libraries to test fan class program
 
-from fan import Fan
+from fan_class import Fan
 
 print("\n========== FAN CLASS TEST PROGRAM ==========\n")
 
