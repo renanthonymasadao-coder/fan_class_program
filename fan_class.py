@@ -38,4 +38,30 @@ class Fan:
 
     def is_on(self):
         return self.__on
-    
+
+    # Display Method
+    def display_info(self):
+
+        # ANSI COLORS
+        RESET = "\033[0m"
+        YELLOW = "\033[93m"
+        BLUE = "\033[94m"
+        GREEN = "\033[92m"
+        RED = "\033[91m"
+
+        # Dynamic Color
+        text_color = RESET
+
+        if self.__color.lower() == "yellow":
+            text_color = YELLOW
+        elif self.__color.lower() == "blue":
+            text_color = BLUE
+
+        status = f"{GREEN}ON{RESET}" if self.__on else f"{RED}OFF{RESET}"
+
+        speed_text = {
+            1: "SLOW",
+            2: "MEDIUM",
+            3: "FAST"
+        }
+
